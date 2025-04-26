@@ -1,12 +1,11 @@
-import NavBar from "../components/navbar";
+import ResponsiveAppBar from '../components/Navbar';
 
 const Home = () => {
   return (
     <div className="home">
-      <NavBar />
+      <ResponsiveAppBar />
       <h1>Home Page</h1>
       <h1>Welcome to the Home Page</h1>
-      <img src="../assets/images/binoMan.png" alt="Logo" />
       <p>This is the home page of our application.</p>
     </div>
   );
