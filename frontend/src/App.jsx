@@ -13,6 +13,10 @@ const theme=createTheme({
   palette:{
     primary:deepOrange,
     secondary:indigo,
+  text:{
+    primary:'#08012e',
+    secondary:'#fff',
+  },
   
     
   },
