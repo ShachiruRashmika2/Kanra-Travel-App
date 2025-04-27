@@ -7,16 +7,17 @@ import { deepOrange } from '@mui/material/colors';
 import {indigo} from '@mui/material/colors';
 
 
-import Home from './pages/Home';
+import Home from './pages/home';
 
 const theme=createTheme({
   palette:{
     primary:deepOrange,
     secondary:indigo,
-    typography:{
-      fontFamily:'Montserrat'
-    },
+  
     
+  },
+  typography:{
+    fontFamily:'Manrope'
   },
   text:{
     primary:'#08012e',

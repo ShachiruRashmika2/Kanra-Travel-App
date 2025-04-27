@@ -128,15 +128,18 @@ const handleOpenUserMenu = (event) => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: 'block',fontSize: { md: 18},fontWeight:'600',color:'text.primary',textTransform:'none',pb:0}}
+                sx={{ my: 2, display: 'block',fontSize: { md: 18},fontWeight:'600',color:'text.primary',textTransform:'none',pb:0
+              ,'&:hover .underline': { animation: 'wobble 1s ease-in-out infinite',display:'block' },
+              
+              }}
                 variant='text'
                 
                 
               >
                 {page}
-                <Box sx={{p:0,height:'2px',width:'20%',backgroundColor:'primary.main',borderRadius:'5px'
-                    ,animation:`${woblleKeyFrames} 1s ease-out `,
-                }} >
+                <Box sx={{p:0,height:'2px',width:'20%',backgroundColor:'primary.main',borderRadius:'5px',position:'absolute',left:'45%',
+                    display:'none'
+                }} className='underline'>
    
   </Box>
               </Button>
@@ -145,7 +148,7 @@ const handleOpenUserMenu = (event) => {
           <Box sx={{ flexGrow: 1}}>
           <Button
                
-                sx={{ my: 2, display: 'block',fontSize: {xs: 8, sm: 12, md: 16},fontWeight:'bold',mx:1,boxShadow:' 2px 0px 24px 5px rgba(255, 88, 4, 0.26)',height: {xs: 30, sm: 40, md: 60},width:{xs: 100, sm: 120, md: 150}}}
+                sx={{ my: 2, display: 'block',fontSize: {xs: 8, sm: 12, md: 16},fontWeight:'bold',mx:1,boxShadow:' 2px 0px 24px 5px rgba(255, 88, 4, 0.26)',height: {xs: 30, sm: 40, md: 60},width:{xs: 100, sm: 120, md: 150},borderRadius:'15px'}}
                 variant='contained'
                 color='primary'
                
