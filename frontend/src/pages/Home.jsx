@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <div className="home">
       <ResponsiveAppBar />
-      <Grid container spacing={2} sx={{ m: '5%' }}>
-        <Grid item xs={12} md={6} sx={{ p: 5, fontFamily: 'Manrope' }}>
+      <Grid container spacing={2} sx={{ m: '5%' ,px:'5%'}} >
+        <Grid size={6} sx={{ p: 5, fontFamily: 'Manrope' }}>
           <Typography
             variant="h2"
             sx={{
@@ -115,7 +115,7 @@ const Home = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={6}>
           <Paper>cvxc</Paper>
         </Grid>
       </Grid>
