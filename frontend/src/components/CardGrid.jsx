@@ -12,7 +12,7 @@ const places = [
 
 export default function CardGrid() {
     return (
-        <Box sx={{ flexGrow: 1, padding: 4 }}>
+        <Box sx={{flexGrow: 1, padding: 4, overflowX: 'auto', overflowY: 'hidden'}}>
             <Grid
                 container
                 spacing={4}
@@ -21,6 +21,8 @@ export default function CardGrid() {
                     flexDirection: "row",
                     flexWrap: "nowrap",
                     overflowX: "auto",
+                    overflowY: "hidden",
+                    width:'max-content',
                     padding: 2,
                     alignItems: "flex-end",
                 }}
@@ -30,7 +32,7 @@ export default function CardGrid() {
                         <Card
                             sx={{
                                 borderRadius: 4,
-                                overflow: "hidden",
+                               
                                 position: "relative",
                                 height: index % 2 === 0 ? 250 : 300,
                                 width:300
