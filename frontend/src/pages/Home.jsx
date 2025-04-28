@@ -2,6 +2,7 @@ import ResponsiveAppBar from '../components/navbar';
 import MainGrid_1 from '../components/MainGrid1';
 import MainGrid_2 from '../components/MainGrid_2';
 import MainGrid_3 from '../components/MainGrid_3';
+import MainGrid_4 from '../components/MainGrid_4';
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
       <MainGrid_1 />
       <MainGrid_2 />
       <MainGrid_3 />
+      <MainGrid_4 />
       
       
      

@@ -127,7 +127,7 @@ const MainGrid_3 = () => {
         </Box>
         <Box sx={{  position: 'absolute',  
           top:'50%',
-          left: {sm:'-2%',md:'-6%'},
+          left: {sm:'-2%',md:'-16%'},
           zIndex:3, 
           width: { xs: 30,sm:80, md: 150 },
             height: { xs: 30,sm:80, md: 150 },

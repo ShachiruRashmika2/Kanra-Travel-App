@@ -6,6 +6,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #272424;
+  overflow-x: hidden;
+  
 }
 
 @keyframes wobble {
