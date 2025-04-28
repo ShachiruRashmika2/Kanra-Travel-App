@@ -4,6 +4,8 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import Guideimage from '../assets/images/binoMan.png';
+import LiveImage from '../assets/images/live.png';
 
 
 
@@ -115,8 +117,29 @@ const Home = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid size={6}>
-          <Paper>cvxc</Paper>
+        <Grid size={6} sx={{ p: 5,alignItems: 'center',  display: 'flex',flexDirection: 'column',justifyContent:{xm:'center',md:'flex-end'} }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' ,backgroundColor:'#00bcd4', width:{ xs: 200,sm:250, md: 320 }, height: { xs: 200,sm:250, md: 360 }, borderRadius: '10%',overflow:'visible',position  :'relative'}}>
+           <img src={Guideimage} alt="Guide" style={{
+            position: 'absolute',  
+          
+            width: '100%',
+            height: '115%', 
+            bottom: '0%',
+            left:'-10%',
+            objectFit: 'cover',  
+        }} />
+        <Box sx={{position:'absolute',top:'25%',right:'-30%',width:{ xs: 30,sm:80, md: 150 }, height: { xs: 45,sm:100, md: 185 },borderRadius: '10%',backgroundColor:'white',boxShadow:'0px 4px 18px rgba(17, 12, 46, 0.15)',alignItems:'center',display:'flex',justifyContent:'center',flexDirection:'column'}}>
+<img src={LiveImage} alt="Live" style={{
+            position: 'relative',  
+            width: '50%',
+            height: '50%', 
+            objectFit: 'cover',  
+        }} />
+
+        <Typography sx={{fontSize:{ xs: 10,sm:15, md: 30 },fontWeight:'900',color:'text.primary',textAlign:'center'}}>24/7</Typography>
+        <Typography sx={{fontSize:{ xs: 5,sm:10, md: 15 },fontWeight:'600',color:'#94908f',textAlign:'center'}}>Guide Support</Typography>
+        </Box>
+          </Box>
         </Grid>
       </Grid>
     </div>

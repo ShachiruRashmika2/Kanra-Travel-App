@@ -23,10 +23,7 @@ const theme=createTheme({
   typography:{
     fontFamily:'Manrope'
   },
-  text:{
-    primary:'#08012e',
-    secondary:'#fff',
-  },
+ 
 });
 
 
