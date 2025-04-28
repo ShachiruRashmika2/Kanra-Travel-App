@@ -12,7 +12,7 @@ import cloud from '../assets/images/rain-png-34472.png';
 
 const MainGrid_1 = () => {
   return (
-    <Grid container spacing={2} sx={{ m: '5%' ,px:'5%'}} >
+    <Grid container spacing={0} sx={{ m: '5%' ,px:'5%'}} >
     <Grid size={6} sx={{ p: 5, fontFamily: 'Manrope' }}>
       <Typography
         variant="h2"
