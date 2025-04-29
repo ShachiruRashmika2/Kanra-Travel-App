@@ -4,6 +4,9 @@ import Denver from '../assets/images/mark-basarab-V1h0v9Bi41k-unsplash.jpg';
 import AirIcon from '@mui/icons-material/Air';
 import signBoard from '../assets/images/direction-sign-board-1000x1000.png';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
+import ThermostatIcon from '@mui/icons-material/Thermostat';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import WaterDropIcon from '@mui/icons-material/WaterDrop';
 
 const MainGrid_5 = () => {
     return (
@@ -118,7 +121,60 @@ const MainGrid_5 = () => {
 
             </Box>
          
-            <Box sx={{width:'100%',height:'25%',backgroundColor:'violet'}}>1</Box>
+            <Box sx={{width:'100%',height:'25%'}}>
+
+            <Stack direction="row" spacing={0.5} sx={{width:'100%',height:'100%',borderRadius:5,justifyContent:'center',alignItems:'center'}}>
+            <Box sx={{width:'25%',height:'90%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',p:0.25}}>
+
+            <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <ThermostatIcon sx={{fontSize:{xs:8,sm:10,md:30},color:'primary.main'}}/>
+                    </Box>
+                    <Box sx={{width:'100%',height:'100%',borderRadius:5,display:'flex',justifyContent:'left',alignItems:'center',flexDirection:'column'}}>
+                    <Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:15}, fontWeight: '600', color: 'text.primary', textAlign: 'left' ,display:'flex',justifyContent:'left',alignItems:'center'}}>
+                    -12°C   </Typography>
+<Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:10}, fontWeight: '500', color: '#94908f', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
+    Temp  </Typography>
+</Box>
+
+
+
+
+            </Box>
+            <Box sx={{width:'25%',height:'90%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',p:0.25}}>
+
+            <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <WbSunnyIcon sx={{fontSize:{xs:8,sm:10,md:30},color:'primary.main'}}/>
+                    </Box>
+                    <Box sx={{width:'100%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+                    <Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:15}, fontWeight: '600', color: 'text.primary', textAlign: 'center' ,display:'flex',justifyContent:'left',alignItems:'center'}}>
+                    13 km  </Typography>
+<Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:10},fontWeight: '500', color: '#94908f', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
+Wind   </Typography>
+</Box>
+
+
+
+
+            </Box>
+            <Box sx={{width:'25%',height:'90%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',p:0.25}}>
+
+<Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>
+    <WaterDropIcon sx={{fontSize:{xs:8,sm:10,md:30},color:'primary.main'}}/>
+        </Box>
+        <Box sx={{width:'100%',height:'100%',borderRadius:5,display:'flex',justifyContent:'left',alignItems:'center',flexDirection:'column'}}>
+        <Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:15}, fontWeight: '600', color: 'text.primary', textAlign: 'left' ,display:'flex',justifyContent:'left',alignItems:'center'}}>
+        80 cm  </Typography>
+<Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:10}, fontWeight: '500', color: '#94908f', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
+Snow  </Typography>
+</Box>
+
+
+
+
+</Box>
+
+            </Stack>
+            </Box>
          
            
 
