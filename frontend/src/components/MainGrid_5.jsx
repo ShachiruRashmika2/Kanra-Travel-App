@@ -1,12 +1,106 @@
-import { Grid, Typography ,Box,Button, IconButton,Stack} from "@mui/material";
-
+import { Grid, Typography ,Box,Button, IconButton,Stack, Card, CardActionArea, CardMedia, CardContent} from "@mui/material";
+import Morocco from '../assets/images/pexels-stijn-dijkstra-1306815-30710160.jpg';
+import Denver from '../assets/images/mark-basarab-V1h0v9Bi41k-unsplash.jpg';
 
 import signBoard from '../assets/images/direction-sign-board-1000x1000.png';
 
 const MainGrid_5 = () => {
     return (
         <Grid container spacing={4} sx={{ m: '5%' ,px:0}} >
-        <Grid size={6} sx={{ px: 5, py:0,display:'flex',justifyContent:'space-between', backgroundColor:'primary.main'}}>a</Grid>
+        <Grid size={6} sx={{ px: 5, py:0,display:'flex', backgroundColor:'white',justifyContent:'center',alignItems:'center',flexDirection:'column',
+         
+
+        }}>
+
+        <Stack direction="column" spacing={1} sx={{mx:2,my:0,backgroundColor:"white",width:'45%',height:'100%',borderRadius:5,p:1,position:"relative",
+           boxShadow:' rgba(0, 0, 0, 0.1) 0px 4px 12px',
+            borderRadius:5,
+            justifyContent:'center',
+            alignItems:'center',
+            }}  >
+            <Box sx={{width:'94%',height:'25%',m:1,p:1,borderRadius:5,}}>
+
+            <Stack direction="row" spacing={1} sx={{width:'100%',height:'100%',backgroundColor:'white',borderRadius:5,justifyContent:'center',alignItems:'center'}}>
+
+            <Box sx={{width:'50%',height:'100%',backgroundColor:'white',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'row'}}>
+            <Typography sx={{ fontSize: { xs: 8, sm:10,md: 16 ,lg:36}, fontWeight: '800', color: 'text.primary', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
+            -12°<Typography sx={{ fontSize: { xs: 8, sm:10,md: 16 ,lg:36}, fontWeight: '800', color: '#94908f', textAlign: 'left' }}>C
+            </Typography ></Typography>
+            </Box>
+            <Box sx={{width:'50%',height:'100%',backgroundColor:'white',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>a
+            </Box>
+
+            </Stack>
+
+
+
+
+            </Box>
+
+
+
+            <Box sx={{width:'200%',height:'50%',backgroundColor:'white',zIndex:3,position:'relative',left:"0%",borderRadius:5,p:1,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'row'
+            ,boxShadow:' rgba(0, 0, 0, 0.1) 0px 4px 12px'
+
+
+
+            }}>
+            <Card sx={{ width: '50%',maxHeight:'100%',background:'transparent',borderRadius:5}} elevation={0}>
+      <CardActionArea sx={{p:0.5}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image={Morocco}
+          alt="Morocco"
+          sx={{borderRadius:5}}
+
+        />
+        <CardContent  sx={{p:0.5}}>
+          <Typography  component="div" sx={{ fontSize: { xs: 8, sm: 10, md: 16 }, fontWeight: '800', color: 'text.primary' }}>
+            Lizard
+          </Typography>
+          <Typography variant="body2" sx={{ color: '#94908f' }}>
+            YVR--LAS--ABC
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+
+    <Card sx={{ width: '50%',maxHeight:'100%',background:'transparent',borderRadius:5}} elevation={0}>
+      <CardActionArea sx={{p:0.5}}>
+        <CardMedia
+          component="img"
+          height="140"
+          image={Denver}
+          alt="Morocco"
+          sx={{borderRadius:5}}
+
+        />
+        <CardContent  sx={{p:0.5}}>
+          <Typography  component="div" sx={{ fontSize: { xs: 8, sm: 10, md: 16 }, fontWeight: '800', color: 'text.primary' }}>
+            Denver
+          </Typography>
+          <Typography variant="body2" sx={{ color: '#94908f' }}>
+            YVR--LAS--ABC
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+
+            </Box>
+         
+            <Box sx={{width:'100%',height:'25%',backgroundColor:'violet'}}>1</Box>
+         
+           
+
+
+        </Stack>
+
+
+
+
+
+        </Grid>
         <Grid size={6} sx={{ px: 5, py:0,display:'flex',flexDirection:'column'}}>
         <Typography sx={{ fontSize: { xs: 8, sm:10,md: 24 ,lg:24}, fontWeight: '600', color:'#94908f', textAlign: 'left' }}>
             Get Connected</Typography>
