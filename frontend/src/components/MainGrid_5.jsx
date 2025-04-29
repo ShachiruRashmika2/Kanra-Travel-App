@@ -1,8 +1,9 @@
 import { Grid, Typography ,Box,Button, IconButton,Stack, Card, CardActionArea, CardMedia, CardContent} from "@mui/material";
 import Morocco from '../assets/images/pexels-stijn-dijkstra-1306815-30710160.jpg';
 import Denver from '../assets/images/mark-basarab-V1h0v9Bi41k-unsplash.jpg';
-
+import AirIcon from '@mui/icons-material/Air';
 import signBoard from '../assets/images/direction-sign-board-1000x1000.png';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 
 const MainGrid_5 = () => {
     return (
@@ -22,12 +23,40 @@ const MainGrid_5 = () => {
 
             <Stack direction="row" spacing={1} sx={{width:'100%',height:'100%',backgroundColor:'white',borderRadius:5,justifyContent:'center',alignItems:'center'}}>
 
-            <Box sx={{width:'50%',height:'100%',backgroundColor:'white',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'row'}}>
+            <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'row'}}>
             <Typography sx={{ fontSize: { xs: 8, sm:10,md: 16 ,lg:36}, fontWeight: '800', color: 'text.primary', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
             -12°<Typography sx={{ fontSize: { xs: 8, sm:10,md: 16 ,lg:36}, fontWeight: '800', color: '#94908f', textAlign: 'left' }}>C
             </Typography ></Typography>
             </Box>
-            <Box sx={{width:'50%',height:'100%',backgroundColor:'white',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>a
+            <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <Stack direction={"column"} spacing={0.5} sx={{width:'100%',height:'100%',backgroundColor:'white',borderRadius:5,justifyContent:'center',alignItems:'center'}}>
+                    <Box sx={{width:'100%',height:'100%',borderRadius:5,display:'flex',justifyContent:'flex-start',alignItems:'center',flexDirection:'row',p:0.5}}>
+                    <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <AirIcon sx={{fontSize:{xs:8,sm:10,md:26},color:'primary.main'}}/>
+                    </Box>
+                    <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'left',alignItems:'center',flexDirection:'column'}}>
+                    <Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:16}, fontWeight: '800', color: '#94908f', textAlign: 'left' ,display:'flex',justifyContent:'left',alignItems:'center'}}>
+                    Wind    </Typography>
+<Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:16}, fontWeight: '800', color: 'text.primary', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
+    13 km    </Typography>
+</Box>
+                    </Box>
+                    
+
+
+                    <Box sx={{width:'100%',height:'100%',borderRadius:5,display:'flex',justifyContent:'flex-start',alignItems:'center',flexDirection:'row',p:0.5}}>
+                    <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <AcUnitIcon sx={{fontSize:{xs:8,sm:10,md:26},color:'primary.main'}}/>
+                    </Box>
+                    <Box sx={{width:'50%',height:'100%',borderRadius:5,display:'flex',justifyContent:'left',alignItems:'center',flexDirection:'column'}}>
+                    <Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:16}, fontWeight: '800', color: '#94908f', textAlign: 'left' ,display:'flex',justifyContent:'left',alignItems:'center'}}>
+                    Snow    </Typography>
+<Typography sx={{ fontSize: { xs: 6, sm:8,md: 16,lg:16}, fontWeight: '800', color: 'text.primary', textAlign: 'left' ,display:'flex',justifyContent:'center',alignItems:'center'}}>
+    80 cm   </Typography>
+</Box>
+                    </Box>
+                    
+                    </Stack>
             </Box>
 
             </Stack>
