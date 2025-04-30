@@ -1,18 +1,23 @@
 import { Box, Card, CardContent, CardMedia, Typography, Grid, Chip } from "@mui/material";
 import LocationPinIcon from '@mui/icons-material/LocationPin';
-import Vanice from '../assets/images/pexels-mohamedelaminemsiouri-2245436.jpg';
+import Vanice from '../assets/images/pexels-pixabay-417344.jpg';
+import Iceland from '../assets/images/pexels-rudy-kirchner-278171-831056.jpg';
+import Moab from '../assets/images/pexels-brianna-eisman-547922903-23629489.jpg';
+import Arizona from '../assets/images/pexels-austin-sullivan-48171954-13594168.jpg';
+
+
 const places = [
-    { title: "Venice", image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-    { title: "Iceland", image: Vanice },
-    { title: "Moab", image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-    { title: "Arizona", image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-     ,{ title: "Arizona", image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=t"}
+    { title: "Venice", image: Vanice },
+    { title: "Iceland", image: Iceland },
+    { title: "Moab", image: Moab },
+    { title: "Arizona", image: Arizona }
+   
 
 ];
 
 export default function CardGrid() {
     return (
-        <Box sx={{flexGrow: 1, padding: 4, overflowX: 'auto', overflowY: 'hidden'}}>
+        <Box sx={{ flexGrow: 1, padding: 4, overflow: 'hidden' }}>
             <Grid
                 container
                 spacing={4}
@@ -20,9 +25,8 @@ export default function CardGrid() {
                     display: "flex",
                     flexDirection: "row",
                     flexWrap: "nowrap",
-                    overflowX: "auto",
-                    overflowY: "hidden",
-                    width:'max-content',
+                    overflow: "hidden",
+                    width: 'max-content',
                     padding: 2,
                     alignItems: "flex-end",
                 }}
@@ -32,15 +36,14 @@ export default function CardGrid() {
                         <Card
                             sx={{
                                 borderRadius: 4,
-                               
                                 position: "relative",
-                                height: index % 2 === 0 ? 250 : 300,
-                                width:300
+                                height: index % 2 === 0 ? 300 : 250,
+                                width: 300
                             }}
                         >
                             <CardMedia
                                 component="img"
-                                height={index % 2 === 0 ? "250" : "300"} 
+                                height={index % 2 === 0 ? "300" : "250"}
                                 width={300}
                                 image={place.image}
                                 alt={place.title}
@@ -48,25 +51,24 @@ export default function CardGrid() {
                             <Chip
                                 label={place.title}
                                 color="primary"
-                                icon={<LocationPinIcon  />}
+                                icon={<LocationPinIcon />}
                                 size="small"
                                 sx={{
                                     position: "absolute",
                                     top: 16,
-                                    [index % 2 === 0 ? "left" : "right"]: 16,   
+                                    [index % 2 === 0 ? "left" : "right"]: 16,
                                     backgroundColor: "white",
                                     color: "text.primary",
                                     fontWeight: "bold",
                                     '& .MuiChip-icon': {
-                                        color: 'primary.main', 
-                                      }
+                                        color: 'primary.main',
+                                    }
                                 }}
                             />
                         </Card>
                     </Grid>
                 ))}
             </Grid>
-           
         </Box>
     );
 }

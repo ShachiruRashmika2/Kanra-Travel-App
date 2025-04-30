@@ -1,5 +1,4 @@
 import { Avatar, Badge, Box, Button, IconButton, Typography } from '@mui/material';
-import ResponsiveAppBar from '../components/navbar';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';

@@ -41,6 +41,7 @@ const MainGrid6 = () => {
 
         
             maskImage: "linear-gradient(to left, black, transparent)",
+            animation: 'moveWestNorth 5s ease-in-out infinite'
            
          
         }}
@@ -92,6 +93,8 @@ const MainGrid6 = () => {
                 filter: "drop-shadow(0px 60px 30px rgba(0, 0, 0, 0.8))",
                 zIndex: 4,
                 transform: "rotate(-20deg)",
+                animation: "shadowOpposite 5s ease-in-out infinite, moveWestNorth 5s ease-in-out infinite",
+               
             }}
         />
     </Box>
