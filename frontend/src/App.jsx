@@ -7,7 +7,7 @@ import { deepOrange } from '@mui/material/colors';
 import {indigo} from '@mui/material/colors';
 
 
-import Home from './pages/home';
+import Home from "./pages/Home";
 
 const theme=createTheme({
   palette:{
