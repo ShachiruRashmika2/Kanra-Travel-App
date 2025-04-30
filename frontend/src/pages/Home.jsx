@@ -1,4 +1,4 @@
-import ResponsiveAppBar from '../components/navbar';
+import ResponsiveAppBar from '../components/Navbar';
 import MainGrid_1 from '../components/MainGrid1';
 import MainGrid_2 from '../components/MainGrid_2';
 import MainGrid_3 from '../components/MainGrid_3';
