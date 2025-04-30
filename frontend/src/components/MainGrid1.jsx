@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Guideimage from '../assets/images/binoMan.png';
-import LiveImage from '../assets/images/live.png';
+import LiveImage from '../assets/images/Live.png';
 import cloud from '../assets/images/rain-png-34472.png';
 
 
