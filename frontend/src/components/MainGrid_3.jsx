@@ -57,7 +57,7 @@ const MainGrid_3 = () => {
               color: 'white',
               width: { xs: 20, sm: 50, md: 80 },
               height: { xs: 20, sm: 50, md: 80 },
-              zIndex: 2,
+              
               position: 'absolute',
               left: '-5%',
               bottom: '-5%',

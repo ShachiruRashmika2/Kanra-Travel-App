@@ -18,7 +18,7 @@ const MainGrid_5 = () => {
 
         <Stack direction="column" spacing={1} sx={{mx:2,my:0,backgroundColor:"white",width:'45%',height:'100%',borderRadius:5,p:1,position:"relative",
            boxShadow:' rgba(0, 0, 0, 0.1) 0px 4px 12px',
-            borderRadius:5,
+           
             justifyContent:'center',
             alignItems:'center',
             }}  >

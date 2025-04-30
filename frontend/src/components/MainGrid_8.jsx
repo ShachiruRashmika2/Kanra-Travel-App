@@ -115,7 +115,7 @@ const MainGrid_8 = () => {
       
       </IconButton></Box>
            </Box>
-           <Box sx={{display:'flex',flexDirection:'column',alignContent:'center',justifyContent:'center',p:1,width:'90%',backgroundColor:'white',borderRadius:{xs:2,sm:5,md:8},height:'40%',alignItems:'center',justifyContent:'center',m:1}}>
+           <Box sx={{display:'flex',flexDirection:'column',alignContent:'center',justifyContent:'center',p:1,width:'90%',backgroundColor:'white',borderRadius:{xs:2,sm:5,md:8},height:'40%',alignItems:'center',m:1}}>
             <Box component={'img'} src={liveGreen} sx={{position: 'relative',  
         width: '60%',
         height: '100%', 
