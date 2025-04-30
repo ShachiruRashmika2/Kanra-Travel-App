@@ -18,8 +18,12 @@ import airbnb from '../assets/images/toppng.com-airbnb-logo-2000x625.png';
 import tripadvisor from '../assets/images/toppng.com-tripadvisor-enables-resellers-and-agencies-to-offer-tripadvisor-llc-1043x161.png';
 import expedia from '../assets/images/toppng.com-expedia-logo-1024x290.png';
 import fedex from '../assets/images/toppng.com-fedex-logo-5231x1680.png';
-
+import Wing from "../assets/images/pexels-jaison-j-samuel-317255142-31714222.jpg";
+import Canada from "../assets/images/pexels-mvdheuvel-2676841.jpg";
+import Algeria from "../assets/images/pexels-mohamedelaminemsiouri-2245436.jpg";
 import FormatQuoteRoundedIcon from '@mui/icons-material/FormatQuoteRounded';
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
+import LocationPinIcon from '@mui/icons-material/LocationPin';
 
 const logos = [
     { name: 'amazon', src: amazon },
@@ -74,20 +78,26 @@ const MainGrid_7 = () => {
                                                 left:100,
                                                 height: 200,
                                                 width:200,
-                                                m:1,overflow:'visible'
+                                                m:1,overflow:'visible',
+                                                '&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        },
                                             }}
                                         >
                                             <CardMedia
                                                 component="img"
                                                 height={200} 
                                                 width={200}
-                                                image={amazon}
-                                                alt='amazon'
+                                                image={Wing}
+                                                alt='Nowhare'
+                                                sx={{ borderRadius: '50%',
+                                                objectFit:'cover' }}
+                                
                                             />
                                             <Chip
-                                                label="amazon"
+                                                label="wing"
                                                 color="primary"
-                                                icon={<FormatQuoteRoundedIcon  />}
+                                                icon={<LocationPinIcon  />}
                                                 size="small"
                                                 sx={{
                                                     position: "absolute",
@@ -113,19 +123,25 @@ const MainGrid_7 = () => {
                                                 top:90,
                                                 right:-90
                                                 ,overflow:'visible'
+                                                ,
+                                                '&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        },
                                             }}
                                         >
                                             <CardMedia
                                                 component="img"
                                                 height={150} 
                                                 width={150}
-                                                image={amazon}
-                                                alt='amazon'
+                                                image={Canada}
+                                                alt='canada'
+                                                sx={{ borderRadius: '50%',
+                                                    objectFit:'cover' }}
                                             />
                                             <Chip
-                                                label="amazon"
+                                                label="Canada"
                                                 color="primary"
-                                                icon={<FormatQuoteRoundedIcon  />}
+                                                icon={<LocationPinIcon  />}
                                                 size="small"
                                                 sx={{
                                                     position: "absolute",
@@ -149,20 +165,25 @@ const MainGrid_7 = () => {
                                                 width:100,
                                                 m:1,
                                                 top:50,
-                                                right:0,overflow:'visible'
+                                                right:0,overflow:'visible',
+                                                '&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        },
                                             }}
                                         >
                                             <CardMedia
                                                 component="img"
                                                 height={100} 
                                                 width={100}
-                                                image={amazon}
-                                                alt='amazon'
+                                                image={Algeria}
+                                                alt='Algeria'
+                                                sx={{ borderRadius: '50%',
+                                                    objectFit:'cover' }}
                                             />
                                             <Chip
-                                                label="amazon"
+                                                label="Algeria"
                                                 color="primary"
-                                                icon={<FormatQuoteRoundedIcon  />}
+                                                icon={<LocationPinIcon  />}
                                                 size="small"
                                                 sx={{
                                                     position: "absolute",
@@ -217,13 +238,29 @@ const MainGrid_7 = () => {
                     </Typography>
                  <Box sx={{ width: '100%', my: 1 }}>
                  <Stack direction="row" spacing={1} sx={{justifyContent:'left'}}>
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"   sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }}/>
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }}/>
-      <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }}/>
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }} />
-      <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }}/>
-      <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }}/>
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} }}/>
+      <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/31826001/pexels-photo-31826001/free-photo-of-expressive-portrait-of-woman-in-berlin-studio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"   sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56},'&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        }, }}/>
+      <Avatar alt="Travis Howard" src="https://images.pexels.com/photos/31817405/pexels-photo-31817405/free-photo-of-portrait-of-a-smiling-woman-on-brown-background.jpeg?auto=compress&cs=tinysrgb&w=600" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} ,'&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        },}}/>
+      <Avatar alt="Cindy Baker" src="https://images.pexels.com/photos/31782837/pexels-photo-31782837/free-photo-of-vibrant-portrait-of-woman-with-pink-sunglasses.jpeg?auto=compress&cs=tinysrgb&w=600" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} ,'&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        },}}/>
+      <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=600" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56} ,'&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        },}} />
+      <Avatar alt="Travis Howard" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56},'&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        }, }}/>
+      <Avatar alt="Cindy Baker" src="https://images.pexels.com/photos/4926674/pexels-photo-4926674.jpeg?auto=compress&cs=tinysrgb&w=600" sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56},'&:hover': {
+                            animation: 'bounce 0.5s ease-in-out',
+                        }, }}/>
+      <Box  sx={{ width: {xs:16,sm:20,md:40,lg:56}, height:{xs:16,sm:20,md:40,lg:56},justifyContent:'center',alignItems:'center',display:'flex'}}>
+      <IconButton aria-label="right" sx={{borderRadius:'50%',border:'2px solid #08012e',color:'text.primary',mx:2}} size="large"  >
+                    <KeyboardArrowRightRoundedIcon/>
+      
+      </IconButton></Box>
       
     </Stack>
 
@@ -265,6 +302,9 @@ const MainGrid_7 = () => {
                     />
                 ))}
             </Grid>
+            <Box sx={{ width: '100%', my: 2 }}>
+            <hr />
+        </Box>
         </Grid>
     );
 };
