@@ -7,13 +7,17 @@ import Vanice from '../assets/images/pexels-pixabay-417344.jpg';
 import Iceland from '../assets/images/pexels-rudy-kirchner-278171-831056.jpg';
 import Moab from '../assets/images/pexels-brianna-eisman-547922903-23629489.jpg';
 import Arizona from '../assets/images/pexels-austin-sullivan-48171954-13594168.jpg';
+import Sigiriya from '../assets/images/sander-traa-bfdshIHD5Y4-unsplash.jpg';
+import Maiami from '../assets/images/alin-andersen-XMRFrzTrmc8-unsplash.jpg';
 import { useRef } from "react";
 
 const places = [
     { title: "Venice", image: Vanice },
     { title: "Iceland", image: Iceland },
     { title: "Moab", image: Moab },
-    { title: "Arizona", image: Arizona }
+    { title: "Arizona", image: Arizona }, 
+    { title: "Sigiriya", image: Sigiriya },
+    { title: "Miami", image: Maiami }
    
 
 ];

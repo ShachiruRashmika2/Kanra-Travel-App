@@ -308,7 +308,7 @@ const MainGrid_7 = () => {
                         component='img' 
                         src={logo.src} 
                         alt={logo.name} 
-                        sx={{ width:{lg:150,md:120,sm:100,xs:50}, height:'auto', m: 1, objectFit: 'contain',filter: 'grayscale(1)' }} 
+                        sx={{ width:{lg:150,md:120,sm:100,xs:50}, height:'auto', m: 1, objectFit: 'contain',filter: 'grayscale(1)' ,'&:hover': { filter: 'grayscale(0)',animation:'bounce 1s ease-in-out forwards' } }} 
                     />
                 ))}
             </Grid>
