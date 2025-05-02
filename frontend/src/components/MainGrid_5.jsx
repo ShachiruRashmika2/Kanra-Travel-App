@@ -10,13 +10,13 @@ import WaterDropIcon from '@mui/icons-material/WaterDrop';
 
 const MainGrid_5 = () => {
     return (
-        <Grid container spacing={4} sx={{ m: '5%' ,px:0}} >
-        <Grid size={6} sx={{ px: 5, py:0,display:'flex', backgroundColor:'white',justifyContent:'center',alignItems:'center',flexDirection:'column',
+        <Grid container spacing={4} sx={{ m: '5%' ,px:0}} data-aos="fade-up">
+        <Grid size={6} sx={{ px:{xs:0}, py:0,display:'flex', backgroundColor:'white',justifyContent:'center',alignItems:'center',flexDirection:'column',
          
 
         }}>
 
-        <Stack direction="column" spacing={1} sx={{mx:2,my:0,backgroundColor:"white",width:'45%',height:'100%',borderRadius:5,p:1,position:"relative",
+        <Stack direction="column" spacing={1} sx={{mx:2,my:0,backgroundColor:"white",borderRadius:5,p:1,position:"relative",
            boxShadow:' rgba(0, 0, 0, 0.1) 0px 4px 12px',
            
             justifyContent:'center',
@@ -71,7 +71,7 @@ const MainGrid_5 = () => {
 
 
 
-            <Box sx={{width:'200%',height:'50%',backgroundColor:'white',zIndex:3,position:'relative',left:"0%",borderRadius:5,p:1,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'row'
+            <Box sx={{width:'120%',height:'40%',backgroundColor:'white',zIndex:3,position:'relative',left:"0%",borderRadius:5,p:1,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'row'
             ,boxShadow:' rgba(0, 0, 0, 0.1) 0px 4px 12px'
 
 
@@ -81,38 +81,38 @@ const MainGrid_5 = () => {
       <CardActionArea sx={{p:0.5}}>
         <CardMedia
           component="img"
-          height="140"
+      
           image={Morocco}
           alt="Morocco"
-          sx={{borderRadius:5}}
+          sx={{borderRadius:5, height:{lg:100,md:80,sm:50,xs:40}}}
 
         />
         <CardContent  sx={{p:0.5}}>
           <Typography  component="div" sx={{ fontSize: { xs: 8, sm: 10, md: 16 }, fontWeight: '800', color: 'text.primary' }}>
             Lizard
           </Typography>
-          <Typography variant="body2" sx={{ color: '#94908f' }}>
+          <Typography variant="body2" sx={{ color: '#94908f',fontSize: { xs: 5, sm: 10, md: 16 } }}>
             YVR--LAS--ABC
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
 
-    <Card sx={{ width: '50%',maxHeight:'100%',background:'transparent',borderRadius:5}} elevation={0}>
+  <Card sx={{ width: '50%',maxHeight:'100%',background:'transparent',borderRadius:5}} elevation={0}>
       <CardActionArea sx={{p:0.5}}>
         <CardMedia
           component="img"
-          height="140"
+        
           image={Denver}
           alt="Morocco"
-          sx={{borderRadius:5}}
+          sx={{borderRadius:5,height:{lg:100,md:80,sm:50,xs:40}}}
 
         />
         <CardContent  sx={{p:0.5}}>
           <Typography  component="div" sx={{ fontSize: { xs: 8, sm: 10, md: 16 }, fontWeight: '800', color: 'text.primary' }}>
             Denver
           </Typography>
-          <Typography variant="body2" sx={{ color: '#94908f' }}>
+          <Typography variant="body2" sx={{ color: '#94908f',fontSize: { xs: 5, sm: 10, md: 16 } }}>
             YVR--LAS--ABC
           </Typography>
         </CardContent>
@@ -197,30 +197,30 @@ Snow  </Typography>
             Your Ultimate travel companion.<br/> that carries all the information you need <br/> while travelling.
             
             
-            </Typography>
-           <Stack direction="row" spacing={2} sx={{my:2}} >
-                <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',width:{ xs: 100,sm:140, md: 200 }, height:{ xs: 50,sm:70, md: 80 },borderRadius:{xs:1,sm:2,md:4},backgroundColor:'yellow',p:0.5,background: 'linear-gradient(90deg,rgba(43, 248, 255, 1) 0%, rgba(121, 224, 83, 1) 25%, rgba(240, 213, 7, 1) 75%, rgba(237, 83, 104, 1) 100%)'}}>
-                   <Box sx={{width:{ xs: 60,sm:80, md: 185 }, height:{ xs: 36,sm:52, md: 65 },borderRadius:{xs:1,sm:2,md:3},backgroundColor:'white',p:1,display:'flex',justifyContent:'center',alignItems:'center'}}>
+            </Typography>{
+           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{my:2}} >
+                <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',width:{ xs: 80,sm:100, md: 200 }, height:{ xs: 20,sm:40, md: 80 },borderRadius:{xs:4,sm:4,md:4},backgroundColor:'yellow',p:0.5,background: 'linear-gradient(90deg,rgba(43, 248, 255, 1) 0%, rgba(121, 224, 83, 1) 25%, rgba(240, 213, 7, 1) 75%, rgba(237, 83, 104, 1) 100%)'}}>
+                   <Box sx={{width:{ xs: 60,sm:60, md: 185 }, height:{ xs: 8,sm:25, md: 65 },borderRadius:{xs:3,sm:3,md:3},backgroundColor:'white',p:1,display:'flex',justifyContent:'center',alignItems:'center'}}>
                    <Box  component='img' sx={{width:{xs:16,sm:24,md:48}, height:"auto"}} src="https://img.icons8.com/fluency/48/google-play-store-new.png" alt="google-play-store-new"/>
                    <Box sx={{display:'flex',justifyContent:'center',alignItems:'flex-start',flexDirection:'column',m:1}}>
-                   <Typography sx={{fontSize:{xs:6,sm:8,md:12},fontWeight:'600',color:'#94908f',textAlign:'left'}}>Get it from</Typography>
-                    <Typography sx={{fontSize:{xs:8,sm:12,md:18},fontWeight:'800',color:'text.primary',textAlign:'left'}}>Google Play</Typography>
+                   <Typography sx={{fontSize:{xs:3,sm:5,md:12},fontWeight:'600',color:'#94908f',textAlign:'left'}}>Get it from</Typography>
+                    <Typography sx={{fontSize:{xs:5,sm:8,md:18},fontWeight:'800',color:'text.primary',textAlign:'left'}}>Google Play</Typography>
                     </Box>
                     </Box>
                 </Box>
-                <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',width:{ xs: 100,sm:140, md: 200 }, height:{ xs: 50,sm:70, md: 80 },borderRadius:{xs:1,sm:2,md:4},backgroundColor:'yellow',p:0.5,background: 'linear-gradient(90deg,rgba(194, 194, 194, 1) 0%, rgba(48, 48, 48, 1) 100%)'}}>
-                   <Box sx={{width:{ xs: 60,sm:80, md: 185 }, height:{ xs: 36,sm:52, md: 65 },borderRadius:{xs:1,sm:2,md:3},backgroundColor:'white',p:1,display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',width:{ xs: 80,sm:100, md: 200 }, height:{ xs: 20,sm:40, md: 80 },borderRadius:{xs:4,sm:4,md:4},backgroundColor:'yellow',p:0.5,background: 'linear-gradient(90deg,rgba(194, 194, 194, 1) 0%, rgba(48, 48, 48, 1) 100%)'}}>
+                   <Box sx={{width:{ xs: 60,sm:60, md: 185 }, height:{ xs: 8,sm:25, md: 65 },borderRadius:{xs:3,sm:3,md:3},backgroundColor:'white',p:1,display:'flex',justifyContent:'center',alignItems:'center'}}>
                     <Box  component='img' sx={{width:{xs:16,sm:24,md:48}, height:"auto"}} src="https://img.icons8.com/ios-filled/50/mac-os.png" alt="apple-app-store-new"/>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'flex-start',flexDirection:'column',m:1}}>
-                   <Typography sx={{fontSize:{xs:6,sm:8,md:12},fontWeight:'600',color:'#94908f',textAlign:'left'}}>Download on the</Typography>
-                    <Typography sx={{fontSize:{xs:8,sm:12,md:18},fontWeight:'800',color:'text.primary',textAlign:'left'}}>Apple Store</Typography>
+                   <Typography sx={{fontSize:{xs:3,sm:5,md:12},fontWeight:'600',color:'#94908f',textAlign:'left'}}>Download on the</Typography>
+                    <Typography sx={{fontSize:{xs:5,sm:8,md:18},fontWeight:'800',color:'text.primary',textAlign:'left'}}>Apple Store</Typography>
                     </Box>
                     </Box>
                 </Box>
                
 
 
-           </Stack>
+           </Stack>}
 
         </Grid>
         </Grid>

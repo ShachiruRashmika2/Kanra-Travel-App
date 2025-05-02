@@ -5,7 +5,7 @@ const MainGrid_2 = () => {
 
 
 return (
-    <Grid container spacing={2} sx={{ m: '5%', px: '5%', alignItems: 'center', justifyContent: 'center' }}>
+    <Grid container spacing={2} sx={{ m: '5%', px: '5%', alignItems: 'center', justifyContent: 'center' }} data-aos="fade-up">
         <Grid item xs={12} sm={6} md={4} sx={{ p: 0, display: 'flex', justifyContent: 'center', alignItems: 'center' ,flexDirection: 'column' }}>
             <AvatarGroup max={4}>
                 <Avatar

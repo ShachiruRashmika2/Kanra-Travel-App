@@ -99,7 +99,7 @@ const handleOpenUserMenu = (event) => {
           </Box>
 
 
-          <Box sx={{ display: { xs: 'none', md: 'flex',justifyContent:'center',alignItems:'center' }, mr: 2,flexgrow:2 }}>
+          <Box sx={{ display: { xs: 'none', lg: 'flex',justifyContent:'center',alignItems:'center' }, mr: 2,flexgrow:2 }}>
           <Paper
       component="form"
       sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: {md:300,sm:100} ,boxShadow:' (3px 23px 40px 23px rgba(71,68,68,0.16))'}}

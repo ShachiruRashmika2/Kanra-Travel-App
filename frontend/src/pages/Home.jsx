@@ -8,14 +8,18 @@ import MainGrid_6 from '../components/MainGrid_6';
 import MainGrid_7 from '../components/MainGrid_7';
 import MainGrid_8 from '../components/MainGrid_8';
 import BottomBar from "../components/BottomBar";
+import { Box } from '@mui/material';
+import useAOS from '../utils/AOS';
 
 
 
 
 
 const Home = () => {
+ 
+ useAOS();
   return (
-    <div className="home">
+    <Box sx={{display:'flex',flexDirection:'column',alignItems:'center'}}>
       <ResponsiveAppBar />
       <MainGrid_1 />
       <MainGrid_2 />
@@ -29,7 +33,7 @@ const Home = () => {
       
       
      
-    </div>
+    </Box>
   );
 }
 

@@ -7,10 +7,10 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const MainGrid_3 = () => {
     return (
-        <Grid container spacing={2} sx={{ my: '5%',mx:'2%' ,px:'2%' ,backgroundColor:'#1f0e85',borderRadius:{xs:'5px',sm:'10px',md:'20px'}}} >
-        <Grid size={4} sx={{ px: 5, py:0,display:'flex'}}>
+        <Grid container spacing={2} sx={{ my: '5%',mx:'2%' ,px:'2%',borderRadius:{xs:'5px',sm:'10px',md:'20px'},backgroundColor:'#1f0e85',width:{xs:"90%",md:'98%'}}} data-aos="fade-up">
+        <Grid size={4} sx={{ px:{xs:0}, py:0,display:'flex'}}>
 
-          <Box sx={{bottom:'10%',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',overflow:'visible',backgroundColor:'#00bcd4',width:"100%",height:{xs:'40%',sm:'50%',md:'60%',lg:'80%'},borderRadius:{xs:'5px',sm:'10px',md:'20px'},position:'relative'}}>
+          <Box sx={{bottom:'10%',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',overflow:'visible',backgroundColor:'#00bcd4',width:"100%",height:'80%',borderRadius:{xs:'5px',sm:'10px',md:'20px'},position:'relative'}}>
           <img src={WinterMan} alt="lady" 
         
         style={{
@@ -29,10 +29,10 @@ const MainGrid_3 = () => {
 <Box sx={{  position: 'absolute',  
          bottom:'0%',
           zIndex:3, 
-          width: { xs: 30,sm:80, md: 150 },
-            height: { xs: 30,sm:80, md: 150 },
-            display:{xs:'none',sm:'flex',md:'flex'}
-            ,justifyContent:'center'
+          width: 'auto',
+            height: { xs: 50,sm:80, md: 150 },
+           
+            justifyContent:'center'
          
           }}>
         <img src={Cloud} alt="cloud" 
@@ -80,9 +80,9 @@ const MainGrid_3 = () => {
 
 
        </Grid>
-       <Grid size={4} sx={{ px: 0,py:5 ,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+       <Grid size={4} sx={{ px: 0,py:{xs:0,md:5} ,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
        
-        <Typography sx={{ fontSize: { xs: 10, sm:12,md: 25 }, fontWeight: '800',color:'text.secondary', textAlign: 'left', my: 3 }}>
+        <Typography sx={{ fontSize: { xs: 8, sm:12,md: 25 }, fontWeight: '800',color:'text.secondary', textAlign: 'left', my: 3 }}>
            Your travel companion that carries<br/>
         all the information 
 
@@ -101,14 +101,12 @@ const MainGrid_3 = () => {
 
 
 
-
-
        <Grid size={4} sx={{ p: 0,justifyContent:'center',alignItems:'center',display:'flex',flexDirection:'column' }}>
-        <Box
+       <Box
         sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' , width:'100%',height:'100%',overflow:'visible',position  :'relative'}}
         
         >
-        <img src={Lady} alt="lady" 
+       <img src={Lady} alt="lady" 
         
         style={{
             position: 'absolute',  
@@ -122,7 +120,7 @@ const MainGrid_3 = () => {
         }}
         
         />
-        <Box sx={{position:'absolute',top:'-22%',left:{xs:'-51%',sm:'-35%',md:'-11%',lg:'-3%'},width:{ xs: 50,sm:70, md: 100 }, height:{ xs: 50,sm:70, md: 100 },borderRadius:'50%',backgroundColor:'yellow'}}>
+        <Box sx={{position:'absolute',top:'-22%',left:{xs:'-28%',sm:'-2%',md:'-40%',lg:'-3%'},width:{ xs: 50,sm:70, md: 100 }, height:{ xs: 50,sm:70, md: 100 },borderRadius:'50%',backgroundColor:'yellow'}}>
 
         </Box>
         <Box sx={{  position: 'absolute',  
@@ -131,7 +129,7 @@ const MainGrid_3 = () => {
           zIndex:3, 
           width: { xs: 30,sm:80, md: 150 },
             height: { xs: 30,sm:80, md: 150 },
-            display:{xs:'none',sm:'flex',md:'flex'}
+           
          
           }}>
         <img src={Cloud} alt="cloud" 
@@ -152,7 +150,7 @@ const MainGrid_3 = () => {
        
         </Box>
 
-        
+
         </Grid>
        </Grid>
     );
