@@ -27,6 +27,8 @@ import KenraLogo from '../assets/images/KanraLogoWhite.png';
 import WooLogo from '../assets/images/woo.png';
 import StripeLogo from '../assets/images/stripe.png';
 import PayPalLogo from '../assets/images/toppng.com-aypal-logo-white-paypal-card-745x192.png';
+import map from '../assets/images/map.png';
+import LocationPinIcon from '@mui/icons-material/LocationPin';
 
 const BottomBar=()=>{
 
@@ -155,7 +157,33 @@ const BottomBar=()=>{
 
 <Grid item xs={12} md={2} sx={{display:'flex',justifyContent:'left',alignItems:'center',flexDirection:'column'}}>
           <Box component={'img'} src={KenraLogo} sx={{width:{xs:60,md:100},mb:1}}/>
-          <Box component="img" src="map-placeholder.png" alt="Map" sx={{ mt: 1, width: '100%' }} />
+          <Box sx={{position:'relative'}}><Box component="img" src={map} alt="Map" sx={{ mt: 1, width:{xs:50,sm:65,md:100} }}/>
+          <Box sx={{position:'absolute',zIndex:2,top:{xs:'18%',sm:'30%'},left:{xs:'22%',sm:'36%'}}}>
+          <IconButton
+            sx={{
+              backgroundColor: 'primary.main',
+              color: 'white',
+              width: { xs: 10, sm: 20, md: 20 },
+              height: { xs: 10, sm: 20, md: 20 },
+              
+             
+              boxShadow: '0px 4px 20px rgba(17, 12, 46, 0.2)',
+              transition: 'all 0.3s ease-in-out',
+              border:'2px solid white',
+             
+
+            
+              
+              '&:hover': {backgroundColor:'primary.main', color:'white',animation:'bounce 1s ease-in-out forwards'},
+            }}
+            size="large"
+          >
+            <LocationPinIcon sx={{fontSize:{xs:7,sm:10,md:12,lg:15}}} />
+          </IconButton>
+          
+          </Box>
+         
+          </Box>
         </Grid>
 
         <Grid item xs={6} md={2}>
